@@ -442,9 +442,9 @@ body:not(.user-is-tabbing) a:focus {
         background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)),
          url('./images/banner.jpeg');
          height: 100vh;
-         background-size: 100% 100%;
+         background-size: 100vh 100vh;
          background-position: center;
-         background-attachment: fixed;
+         
     }
 
 
