@@ -624,3 +624,26 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+#clockdiv {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 500px) {
+    #clockdiv {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#voter {
+    color: var(--black);
+}
+
+#voter:hover {
+    color: grey;
+}
