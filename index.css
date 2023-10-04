@@ -35,9 +35,10 @@
     --line-height-small: 1.2;
 
     --black: #efefef;
-    --pink: #0A3775;
+    --pink: #08377C;
     --white: #0A3775;
     --white-1: #0A3775;
+    --red: #B92A35;
 
 
     --container-max-width: 1180px;
@@ -436,6 +437,23 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-medium);
 }
 
+@media(max-width: 1000px) {
+    .header {
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)),
+         url('./images/banner.jpeg');
+         height: 100vh;
+         background-size: 100vh 100vh;
+         background-position: center;
+         background-repeat: no-repeat;
+    }
+
+
+    .header__text p {
+        transform: scale(.8);
+    }
+}
+
 @media(max-width: 600px) {
     .header {
         text-align: center;
@@ -530,6 +548,7 @@ body:not(.user-is-tabbing) a:focus {
 .about {
     background-color: var(--pink);
     color: var(--black);
+    justify-content: center;
 }
 .about__content {
     display: flex;
@@ -647,3 +666,12 @@ body:not(.user-is-tabbing) a:focus {
 #voter:hover {
     color: grey;
 }
+#early-voting {
+    display: flex;
+    justify-content: space-around;
+    color: var(--black);
+    background-color: #8C2229;
+    position: sticky;
+    
+}
+
